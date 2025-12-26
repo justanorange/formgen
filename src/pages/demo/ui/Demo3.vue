@@ -48,6 +48,11 @@
   const handleSubmit = (data: FormModel) => {
     store.dispatch('feedback/submitForm', data);
     alert('Message form submitted and saved to store!');
+    formData.value = {
+      subject: '',
+      message: '',
+      rating: '',
+    };
   };
 
   const handleCancel = () => {
